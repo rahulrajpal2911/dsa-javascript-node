@@ -1,0 +1,25 @@
+{
+  // Configuration options to help VSCode understand your JS project
+  "compilerOptions": {
+    // Base directory for non-relative imports (e.g., import x from "utils/x")
+    "baseUrl": "./src",
+
+    // Set module system for IntelliSense (Node.js with ES modules)
+    "module": "es6",
+
+    // Allow default module resolution strategy (can be changed if needed)
+    "moduleResolution": "node",
+
+    // Enable IntelliSense for JS
+    "checkJs": true,
+
+    // Show JS errors in editor (optional, set to false to disable)
+    "noEmit": true
+  },
+
+  // Folders and files to include in the project
+  "include": ["src/**/*", "test/**/*"],
+
+  // Folders to exclude (like build output or node_modules)
+  "exclude": ["node_modules", "**/dist"]
+}
