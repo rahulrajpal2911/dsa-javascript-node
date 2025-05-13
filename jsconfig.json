@@ -2,10 +2,19 @@
   // Configuration options to help VSCode understand your JS project
   "compilerOptions": {
     // Base directory for non-relative imports (e.g., import x from "utils/x")
-    "baseUrl": "./src",
-
+    "baseUrl": "./src", // Base path for resolving non-relative imports
+    "paths": {
+      "@array/*": ["array/*"],
+      "@graph/*": ["graph/*"],
+      "@queue/*": ["queue/*"],
+      "@recursion/*": ["recursion/*"],
+      "@stack/*": ["stack/*"],
+      "@tree/*": ["tree/*"],
+      "@utils/*": ["utils/*"]
+    },
     // Set module system for IntelliSense (Node.js with ES modules)
-    "module": "es6",
+    "module": "es2022",
+    "target": "es2022",
 
     // Allow default module resolution strategy (can be changed if needed)
     "moduleResolution": "node",
@@ -21,5 +30,5 @@
   "include": ["src/**/*", "test/**/*"],
 
   // Folders to exclude (like build output or node_modules)
-  "exclude": ["node_modules", "**/dist"]
+  "exclude": ["node_modules"]
 }

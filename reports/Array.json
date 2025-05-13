@@ -1,0 +1,173 @@
+{
+  "Traversal": [
+    {
+      "method": "For Loop",
+      "elapsedTime": "125.00",
+      "memoryUsage": {
+        "heapUsed": "0.97",
+        "heapTotal": "1.00"
+      },
+      "cpuUsage": {
+        "user": "99.52",
+        "system": "13.51"
+      },
+      "timestamp": "2025-05-13T11:59:51.456Z"
+    },
+    {
+      "method": "For-of Loop",
+      "elapsedTime": "0.23",
+      "memoryUsage": {
+        "heapUsed": "0.38",
+        "heapTotal": "0.00"
+      },
+      "cpuUsage": {
+        "user": "0.22",
+        "system": "0.01"
+      },
+      "timestamp": "2025-05-13T11:59:51.457Z"
+    },
+    {
+      "method": "For-in Loop",
+      "elapsedTime": "0.30",
+      "memoryUsage": {
+        "heapUsed": "0.08",
+        "heapTotal": "0.00"
+      },
+      "cpuUsage": {
+        "user": "0.29",
+        "system": "0.01"
+      },
+      "timestamp": "2025-05-13T11:59:51.458Z"
+    },
+    {
+      "method": "forEach",
+      "elapsedTime": "88.59",
+      "memoryUsage": {
+        "heapUsed": "-1.28",
+        "heapTotal": "0.25"
+      },
+      "cpuUsage": {
+        "user": "51.45",
+        "system": "8.85"
+      },
+      "timestamp": "2025-05-13T11:59:51.547Z"
+    },
+    {
+      "method": "map() method",
+      "elapsedTime": "125.73",
+      "memoryUsage": {
+        "heapUsed": "1.83",
+        "heapTotal": "0.86"
+      },
+      "cpuUsage": {
+        "user": "1.97",
+        "system": "5.06"
+      },
+      "timestamp": "2025-05-13T11:59:51.673Z"
+    },
+    {
+      "method": "While Loop",
+      "elapsedTime": "93.67",
+      "memoryUsage": {
+        "heapUsed": "-0.16",
+        "heapTotal": "-0.86"
+      },
+      "cpuUsage": {
+        "user": "55.43",
+        "system": "9.17"
+      },
+      "timestamp": "2025-05-13T11:59:51.767Z"
+    },
+    {
+      "method": "Do-while Loop",
+      "elapsedTime": "84.29",
+      "memoryUsage": {
+        "heapUsed": "-1.25",
+        "heapTotal": "0.00"
+      },
+      "cpuUsage": {
+        "user": "50.77",
+        "system": "8.66"
+      },
+      "timestamp": "2025-05-13T11:59:51.852Z"
+    },
+    {
+      "method": "reduce() method",
+      "elapsedTime": "0.32",
+      "memoryUsage": {
+        "heapUsed": "0.00",
+        "heapTotal": "0.00"
+      },
+      "cpuUsage": {
+        "user": "0.30",
+        "system": "0.02"
+      },
+      "timestamp": "2025-05-13T11:59:51.852Z"
+    },
+    {
+      "method": "For-of with break",
+      "elapsedTime": "0.06",
+      "memoryUsage": {
+        "heapUsed": "0.05",
+        "heapTotal": "0.00"
+      },
+      "cpuUsage": {
+        "user": "0.36",
+        "system": "0.00"
+      },
+      "timestamp": "2025-05-13T11:59:51.852Z"
+    },
+    {
+      "method": "filter() method",
+      "elapsedTime": "75.60",
+      "memoryUsage": {
+        "heapUsed": "1.05",
+        "heapTotal": "0.44"
+      },
+      "cpuUsage": {
+        "user": "1.46",
+        "system": "2.55"
+      },
+      "timestamp": "2025-05-13T11:59:51.928Z"
+    },
+    {
+      "method": "For Loop",
+      "elapsedTime": "61679.10",
+      "memoryUsage": {
+        "heapUsed": "2811.35",
+        "heapTotal": "2860.83"
+      },
+      "cpuUsage": {
+        "user": "66424.30",
+        "system": "9141.88"
+      },
+      "timestamp": "2025-05-13T12:01:39.508Z"
+    },
+    {
+      "method": "For-of Loop",
+      "elapsedTime": "291.77",
+      "memoryUsage": {
+        "heapUsed": "5.85",
+        "heapTotal": "1.50"
+      },
+      "cpuUsage": {
+        "user": "198.40",
+        "system": "39.49"
+      },
+      "timestamp": "2025-05-13T12:01:39.802Z"
+    },
+    {
+      "method": "For-in Loop",
+      "elapsedTime": "5477.85",
+      "memoryUsage": {
+        "heapUsed": "278.17",
+        "heapTotal": "273.81"
+      },
+      "cpuUsage": {
+        "user": "7827.75",
+        "system": "3636.65"
+      },
+      "timestamp": "2025-05-13T12:01:45.280Z"
+    }
+  ]
+}

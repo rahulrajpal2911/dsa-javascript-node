@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DSA Exercises</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      #tabs {
+        width: 250px;
+        background: #f3f3f3;
+        border-right: 1px solid #ccc;
+        overflow-y: auto;
+      }
+      #editor {
+        flex: 1;
+        padding: 20px;
+      }
+      .tab {
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #ddd;
+      }
+      .tab:hover {
+        background: #ddd;
+      }
+      .active {
+        background: #bbb;
+      }
+      pre {
+        background: #eee;
+        padding: 10px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tabs"></div>
+    <div id="editor">
+      <h2 id="exercise-title"></h2>
+      <p id="exercise-prompt"></p>
+      <pre id="exercise-code"></pre>
+    </div>
+
+    <script src="dsa-data.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const category = params.get("category");
+      const topic = params.get("topic");
+      const algo = params.get("algo");
+
+      const algoData = dsaData?.[category]?.[topic]?.algorithms?.find
+        ? dsaData[category][topic].algorithms.find(
+            (a) => typeof a === "object" && a.name === algo
+          )
+        : dsaData[category][topic]?.exercises?.[algo];
+
+      const exercises =
+        dsaData[category][topic]?.exercises?.[algo]?.exercises || [];
+
+      const tabsDiv = document.getElementById("tabs");
+      const editorTitle = document.getElementById("exercise-title");
+      const editorPrompt = document.getElementById("exercise-prompt");
+      const editorCode = document.getElementById("exercise-code");
+
+      function loadExercise(index) {
+        const ex = exercises[index];
+        editorTitle.textContent = ex.title;
+        editorPrompt.textContent = ex.prompt;
+        editorCode.textContent = ex.starterCode;
+
+        [...tabsDiv.children].forEach((c) => c.classList.remove("active"));
+        tabsDiv.children[index].classList.add("active");
+      }
+
+      exercises.forEach((ex, i) => {
+        const tab = document.createElement("div");
+        tab.className = "tab";
+        tab.textContent = ex.title;
+        tab.onclick = () => loadExercise(i);
+        tabsDiv.appendChild(tab);
+      });
+
+      if (exercises.length > 0) loadExercise(0);
+    </script>
+  </body>
+</html>

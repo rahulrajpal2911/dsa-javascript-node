@@ -2,7 +2,8 @@
   "name": "@rahulrajpal/dsa-javascript-node",
   "version": "0.0.1",
   "description": "\"description\": \"A scalable and modular Node.js/TypeScript application for managing scheduled tasks using in-memory data structures like queues, heaps, and graphs.\"",
-  "main": "index.js",
+  "main": "src/index.mjs",
+  "type": "module",
   "directories": {
     "test": "test"
   },
@@ -10,7 +11,8 @@
     "jest": "^29.7.0"
   },
   "scripts": {
-    "test": "npm run test"
+    "test": "jest",
+    "start": "node src/index.mjs"
   },
   "repository": {
     "type": "git",
@@ -28,5 +30,17 @@
   "bugs": {
     "url": "https://github.com/rahulrajpal2911/dsa-javascript-node/issues"
   },
-  "homepage": "https://github.com/rahulrajpal2911/dsa-javascript-node#readme"
+  "homepage": "https://github.com/rahulrajpal2911/dsa-javascript-node#readme",
+  "_moduleAliases": {
+    "@utils": "src/utils",
+    "@array": "src/array",
+    "@graph": "src/graph",
+    "@queue": "src/queue",
+    "@recursion": "src/recursion",
+    "@stack": "src/stack",
+    "@tree": "src/tree"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  }
 }
